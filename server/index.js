@@ -227,6 +227,13 @@ app.get('/health', (req, res) => {
 
 // 新增：状态检查接口
 app.get('/api/status', (req, res) => {
+  console.log('请求头:', req.headers);
+
+  const authHeader = req.headers['authorization'];
+  if (!authHeader || authHeader !== `Bearer ${API_KEY}`) {
+    return res.status(401).json({ error: 'Unauthorized' });
+  }
+
   res.json({ 
     status: 'ok',
     timestamp: new Date().toISOString()
@@ -242,4 +249,4 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 // 导出 app 供 Vercel 使用
-module.exports = app; 
+module.exports = app;
