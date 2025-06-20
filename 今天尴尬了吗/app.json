@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/chat/chat",
+    "pages/history/history",
+    "pages/settings/settings",
+    "pages/about/about"
+  ],
+  "window": {
+    "navigationBarTitleText": "今天尴尬了吗",
+    "navigationBarBackgroundColor": "#1a1a1a",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#1a1a1a",
+    "backgroundTextStyle": "light"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

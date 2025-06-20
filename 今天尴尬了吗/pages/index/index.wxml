@@ -1,0 +1,32 @@
+<view class="container">
+  <view class="header">
+    <view class="title">今天尴尬了吗</view>
+    <view class="subtitle">AI 陪你体验各种尴尬场景</view>
+  </view>
+
+  <view class="content">
+    <view class="feature-list">
+      <view class="feature-item">
+        <view class="feature-icon">🎭</view>
+        <view class="feature-text">随机生成尴尬场景</view>
+      </view>
+      <view class="feature-item">
+        <view class="feature-icon">🤖</view>
+        <view class="feature-text">AI 角色扮演对话</view>
+      </view>
+      <view class="feature-item">
+        <view class="feature-icon">💡</view>
+        <view class="feature-text">体验真实社交情境</view>
+      </view>
+    </view>
+
+    <button class="start-btn" bindtap="startChat">
+      <text class="btn-text">开始体验</text>
+      <text class="btn-icon">→</text>
+    </button>
+  </view>
+
+  <view class="footer">
+    <text class="footer-text">让 AI 带你体验不一样的社交场景</text>
+  </view>
+</view>

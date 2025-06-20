@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="header">
+    <view class="back-btn" bindtap="goBack">
+      <text class="back-icon">←</text>
+    </view>
+    <view class="title">设置</view>
+  </view>
+  <view class="setting-item">
+    <text>主题</text>
+    <switch bindchange="toggleTheme" />
+  </view>
+  <view class="setting-item">
+    <text>字体大小</text>
+    <slider min="12" max="24" step="1" bindchange="changeFontSize" />
+  </view>
+</view>
